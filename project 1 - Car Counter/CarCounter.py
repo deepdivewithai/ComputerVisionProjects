@@ -3,9 +3,7 @@ import cv2
 import cvzone
 import math
 
-# cap = cv2.VideoCapture("http://192.168.0.103:4747/video") # For Mobile
-cap = cv2.VideoCapture(0) # For Webcam
-# cap = cv2.VideoCapture("../Resource/Videos/bikes.mp4")
+cap = cv2.VideoCapture("../Resource/Videos/cars.mp4")
 cap.set(3,1280)
 cap.set(4,720)
 
