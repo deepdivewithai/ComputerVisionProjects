@@ -5,7 +5,7 @@ import math
 
 # cap = cv2.VideoCapture("http://192.168.0.103:4747/video") # For Mobile
 # cap = cv2.VideoCapture(0) # For Webcam
-cap = cv2.VideoCapture("../code and files/Object-Detection-101/Videos/people.mp4")
+cap = cv2.VideoCapture("../Resource/Videos/bikes.mp4")
 cap.set(3,1280)
 cap.set(4,720)
 
@@ -47,7 +47,7 @@ while True:
 
             # Class Name
             cls = int(box.cls[0])
-            cvzone.putTextRect(img, f"{classNames[cls]} {conf}", (max(0,x1),max(20,y1)),scale=0.7, thickness=1)
+            cvzone.putTextRect(img, f"{classNames[cls].upper()} {conf}", (max(0,x1),max(20,y1)), scale=1.2,thickness=1)
 
     
     cv2.imshow("Image", img)
